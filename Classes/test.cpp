@@ -200,9 +200,9 @@ bool PhysicsDemos::init()
         }
 
         //create menu
-        auto backItem = MenuItemImage::create("", "leftSelected.png", CC_CALLBACK_1(PhysicsDemos::backCallback, this) );
-        auto restartItem = MenuItemImage::create("restartNormal.png", "restartSelected.png", CC_CALLBACK_1(PhysicsDemos::restartCallback, this) );
-        auto nextItem = MenuItemImage::create("", "rightSelected.png", CC_CALLBACK_1(PhysicsDemos::nextCallback, this) );
+        auto backItem = MenuItemImage::create("", "", CC_CALLBACK_1(PhysicsDemos::backCallback, this) );
+        auto restartItem = MenuItemImage::create("", "", CC_CALLBACK_1(PhysicsDemos::restartCallback, this) );
+        auto nextItem = MenuItemImage::create("", "", CC_CALLBACK_1(PhysicsDemos::nextCallback, this) );
 
         auto menu = Menu::create(backItem, restartItem, nextItem, nullptr);
         menu->setPosition(Vec2::ZERO);
